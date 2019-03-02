@@ -109,12 +109,12 @@ public class WebelementExcercise {
 			
 			driver.findElement(By.xpath("//input[@id='email']")).sendKeys(EmailAdress);
 			
-			driver.findElement(By.xpath("//input[@name='login[password]']")).sendKeys("89768567");
+			driver.findElement(By.xpath("//input[@name='login[password]']")).sendKeys("123");
 			WebElement LogInbtn= driver.findElement(By.xpath("//button[@id='send2']"));		
 			LogInbtn.click();
 			
-			String InvalidPasswordWarning =driver.findElement(By.xpath("//span[text()='Invalid login or password.']")).getText();
-			Assert.assertEquals("Please enter 6 or more characters. Leading or trailing spaces will be ignored.", InvalidPasswordWarning );
+			String InvalidPasswordWarning =driver.findElement(By.xpath("//div[@id='advice-validate-password-pass']")).getText();
+			Assert.assertEquals("Please enter 6 or more characters without leading or trailing spaces.", InvalidPasswordWarning );
 		}
 		
 		@AfterClass
