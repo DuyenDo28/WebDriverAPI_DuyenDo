@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="WebElements.CheckingElements">
+      <class name="WebElements.WebelementExcercise">
         <methods>
-          <include name="TC_02_Exercise"/>
-          <include name="beforeClass"/>
-          <include name="TC_03_Excercise"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="TC_04_LogInWithIncorrectPassword"/>
         </methods>
-      </class> <!-- WebElements.CheckingElements -->
+      </class> <!-- WebElements.WebelementExcercise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
